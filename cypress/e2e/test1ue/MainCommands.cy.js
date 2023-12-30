@@ -40,6 +40,19 @@ describe('Main Commands', () => {
         cy.log("trial...")
     });
 
+    it.skip('skip and only commands', () => {
+        /*
+        
+         it.skip("", ()=>{
+                   this test will be skipped and the other test cases will work
+          })
+
+          it.only("", ()=>{
+                   only this test works
+          })
+
+        */
+    });
 
 
 });

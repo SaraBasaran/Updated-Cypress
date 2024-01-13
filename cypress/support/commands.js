@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import customCommandsLogin from "../pom/customCommandsLogin"
+
+Cypress.Commands.add('login', (username, password) => {  
+
+    cy.visit('https://www.automationexercise.com/login')//  you can type either here or yo can type in the same 
+    //cy file with a beforeEach() block
+    customCommandsLogin.usernameField.type(username)
+    customCommandsLogin.passwordField.type(password)
+    customCommandsLogin.submitBtn.click()
+
+})

@@ -1,5 +1,6 @@
 describe('Fixture Usage', () => {
     it('Fixture Usage for Data Invalid USername + Invalid Password', () => {
+        // fixture folders are used to store test data
         //if theres any subfolder under fixtures folder then we should type a slash between folder and file names.
      //for ex; cy.fixtures("subfoldername/loginData")
 
